@@ -1,0 +1,77 @@
+First, show them the completed game, so they know what we are making
+
+we need to set up our environment and import any necessary tools
+
+    Start by explaining hello world
+        All Java files contain classes. our class if HighLow.
+        Within the class, we have the main method. This is the entry point.
+        explain printing
+        run hello world to ensure environments are set up correctly.
+
+    Paste the imports & explain them.
+        import java.util.Random;
+        import java.util.Scanner;
+
+Now we can work on setting up the game
+
+    Create random int
+        Explain variables, and the need to store data that we remember.
+        create a contant, MAX_NUMBER, and set it to 100. Place inside main for simplicity.
+        create number generator instance.
+        create an int, and store the random number in it.
+            Explain the idea of a function call, which accepts the max as an input.
+            At runtime, the function call is replaced with a random number. just like substitution in algebra.
+
+    Explain the idea of iterative development:
+        develop a bit, then test your bit of code.
+        the benefits:
+            build confidence that your foundations are sound.
+            reduces the odds that you have elusive bugs in your code. 
+            simplifies integration
+        Test random number generation by printing the value. run multiple times. check that value changes and its within range.
+        comment or delete the print afterwards.
+
+    Set up a scanner to read in user input
+        this will be used to read in user responses
+        System.in means take in input from the console (stdin)
+
+    Declare a String to store the users response.
+
+    Declare an int to store the parsed guess
+
+    Create a flag to control the while loop
+        explain that this flag will act as an "off button" that we can use the turn the game off.
+        booleans = true/false, high/low, on/off, etc. Think of the solenoids on the collector. 
+
+
+Now that the setup is complete we can set up the game loop
+
+    create a while loop
+        explain that any instructions in the loop will be repeated until we turn the game off, using the flag.
+
+    use print to prompt the user
+
+    read the user response into the response String
+
+    Stop here and do an iterative test:
+        print the response in all caps, to ensure we are able to get data in.
+    
+    Explain parsing: 
+        extract a number from a string
+        What could go wrong here? what if someone enters abc? 12.3? 1.1.1.1?
+        Use a try catch 
+            in the try block, place the code that could pontentially fail
+            in the catch block, place error handling code. 
+                print error message.
+                use continue to reset the loop
+
+    use if statements to compare the guess to the secret number
+        if stmts are used to excute code conditionally. if true, run this code. otherwise, run this code.
+        set up the ifs first, fill in after. 
+
+    if greater/less than, print a message telling the user this.
+    if correct, say so, then flip the flag
+
+    tack on a game over message as well
+
+
